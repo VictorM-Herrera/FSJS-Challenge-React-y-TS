@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+:root{
+  --verde-osc : #99e1ad;
+  --celeste : #b1ddd3;
+  --verde-claro : #b1e9bd;
+  --verde-ama: #d4ed97;
+}
