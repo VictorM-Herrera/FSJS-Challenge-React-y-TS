@@ -1,6 +1,22 @@
-/* *{
-  margin: 0;
-  padding: auto;
-  box-sizing: border-box;
-  overflow-x: hidden;
-} */
+footer{
+    bottom: 0;
+    height: 100px;
+    background-color: rgb(52, 51, 51) !important;
+    text-align: center;
+    color: aliceblue;
+    position: absolute;
+    width: 100%;
+}
+footer > p{
+    padding-top: 50px;
+}
+
+body{
+    position: relative;
+    padding-bottom: 150px;
+    min-height: 100vh;
+}
+
+.card-text{
+    margin-right: 10px;
+}
