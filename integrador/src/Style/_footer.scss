@@ -1,0 +1,13 @@
+footer{
+    text-align: center;
+    padding: 3px;
+    background-color: $header;
+    color: $p-text;
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    a{
+        text-decoration: none;
+        color: $p-text;
+    }
+}

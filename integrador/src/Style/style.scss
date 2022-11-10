@@ -1,0 +1,71 @@
+@import './colores';
+@import './footer';
+@import './botonera';
+@import './cardContainer';
+
+*{
+    margin: 0;
+    padding: auto;
+    overflow-x: hidden;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    background-color: #dce775;
+}
+
+.header-box{
+    background-color: $header;
+    text-align: center;
+    font-family: sans-serif;
+    h1{
+        display: flex;
+        color: $p-text;
+        size: 1em;
+        align-items: center;
+        img{
+            height: 50px;
+            margin-left: 30px;
+        }
+    }
+    .nav-box{
+        background: $p-light;
+        ul{
+            display: flex;
+            gap: 100px;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            li{
+                border-radius: 5px;
+                a{
+                    text-decoration: none;
+                    display: block;
+                    color: $p-text;
+                    border-radius: 50%;
+                    padding: 1em;
+                    width: 150px;
+                    transition: font-size 0.5s;
+                    transition: border-radius 0.2s;
+                    transition: font-size 0.2s;
+                    &:hover{
+                        background-color: $p-dark;
+                        opacity: 0.5;
+                        color: white;
+                        border-radius: 0;
+                        font-size: 20px;
+                    }
+                    @media(max-width:780px){
+                        width: 100vw;
+                    }
+                }                
+            }
+            @media(max-width: 780px)
+            {
+                flex-direction: column;
+                padding: 0;
+                gap: 0;
+            }
+        }
+    }
+}
