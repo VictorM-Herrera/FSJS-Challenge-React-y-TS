@@ -17,6 +17,7 @@ footer a {
   justify-content: center;
   gap: 10px;
   padding-top: 10px;
+  padding: 1em;
   padding-bottom: 10px;
   width: 50%;
 }
@@ -116,7 +117,7 @@ footer a {
   width: 200%;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   transition: all 1.2s ease;
   border-radius: 10px;
@@ -158,6 +159,36 @@ footer a {
   background-color: rgb(38, 134, 38) !important;
   color: white !important;
   border-color: rgb(38, 134, 38) !important;
+}
+
+.centrado .carrusel-grandote {
+  width: 90%;
+  max-width: 120em;
+}
+.centrado .carrusel-grandote .carrusel-view {
+  width: 200%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1.2s ease;
+}
+.centrado .carrusel-grandote .carrusel-view .carrusel-view-img {
+  width: 50%;
+  height: 600px;
+  box-shadow: 5px 1px 14px #a8b545;
+}
+
+.boton-carrusel-grande {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  font-size: 20px;
+}
+.boton-carrusel-grande:hover {
+  background: rgb(38, 134, 38);
+  opacity: 0.5;
+  color: white;
 }
 
 * {

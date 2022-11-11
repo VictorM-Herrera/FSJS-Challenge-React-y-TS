@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import arrayProductos from '../Data/Data'
+import CarruselGrande from './CarruselGrande'
 
 export default function Productos(props) {
   return (
     <>
     <div id="center">
+        <CarruselGrande/>
     <div className='card-section'>
         <GeneraCards {...props}/>
     </div>

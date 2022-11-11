@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import arrayProductos from '../Data/Data'
-import Botonera from './Botonera';
 import Carrusel from './Carrusel';
 import Productos from './Productos';
 

@@ -3,6 +3,7 @@ import Intro from "./components/Intro";
 import Preguntas from "./components/Preguntas";
 import Footer from "./components/Footer";
 import Filtrado from "./components/Filtrado";
+import ImagenBottom from "./components/ImagenBottom";
 
 function App() {
   const [cuerpo, setCuerpo]= useState("Productos");
