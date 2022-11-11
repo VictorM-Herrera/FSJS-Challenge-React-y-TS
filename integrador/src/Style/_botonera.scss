@@ -1,14 +1,14 @@
 .botonera{
     display:flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    
+    width: calc(100% / 2);
     button{
        background-color: $p-light;
        border: none;
+       width: 6em;
        border-radius: 10px;
        margin-top: 10px;
        margin-bottom: 5px;

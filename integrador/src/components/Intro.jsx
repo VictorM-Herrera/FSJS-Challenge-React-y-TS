@@ -20,8 +20,7 @@ function Exploracion(props)
         <nav className='nav-box'>
             <ul>
                 <li><a href="#" onClick={navBody}>Productos</a></li>
-                <li><a href="#" onClick={navBody}>Preguntas</a></li>
-                <li><a href="#" onClick={navBody}>Contacto</a></li>
+                <li><a href="#" onClick={navBody}>Carrito</a></li>
             </ul>
         </nav>
     )

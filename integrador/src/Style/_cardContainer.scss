@@ -9,24 +9,14 @@
     justify-content: center;
     padding:10px;
     padding-bottom: 5em;
-    p{
-        color:$p-text;
-    }
-    h3{
-       color:black;
-    }
-   
-    .card-titulo{
-        width: fit-content;
-    }
+    
     .card-box{
         border: 5px solid $p-light;
         background-color: $p-light;
         margin: 15px;
         box-shadow: 5px 1px 14px #a8b545;
-        transition: width 0.5s;
-        transition: height 0.5s;
-        transition: font-size 0.5s;
+        transition: border .2s;
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -34,6 +24,9 @@
         z-index: 1;
         .card-body{
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
             .boton{
              background-color: $s-dark;
              border: none;
@@ -47,7 +40,11 @@
              &:hover{
                 background-color: $s-light;
              }
-         }
+            }
+            p{
+                margin-top: 5px;
+                color:$p-text;
+            }
          }
          .card-img{
             text-align: center;
@@ -60,7 +57,14 @@
             // padding: 10px;
             z-index: 2;
             opacity: 0.8;
-
+            background-color: $header;
+            border: 2px solid $header;
+            h3{
+                color: white;
+            }
+            p{
+              color: white;  
+            }
         }
     }
     @media (min-width: 975px){

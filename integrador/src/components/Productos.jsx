@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import arrayProductos from '../Data/Data'
-import Filtrado from './Filtrado'
 
 export default function Productos(props) {
   return (

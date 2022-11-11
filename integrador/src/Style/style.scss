@@ -2,11 +2,13 @@
 @import './footer';
 @import './botonera';
 @import './cardContainer';
+@import './carrusel';
 
 *{
     margin: 0;
     padding: auto;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 body{
     position: relative;

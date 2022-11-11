@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import arrayProductos from '../Data/Data'
+import Botonera from './Botonera';
+import Carrusel from './Carrusel';
 import Productos from './Productos';
 
 export default function Filtrado() {
@@ -21,28 +23,24 @@ export default function Filtrado() {
         case "Accion":
             render=<Productos tipo="Accion"/>
         break;
+        case "Aventura":
+            render=<Productos tipo="Aventura"/>
+        break;
+        case "Rol":
+            render=<Productos tipo="Rol"/>
+        break;
+        case "Lucha":
+            render=<Productos tipo="Lucha"/>
+        break;
+        case "Carreras":
+            render=<Productos tipo="Carreras"/>
+        break;
     }
 
   return (
     <>
-        <Mostrar setView={setView}/>
+        <Carrusel setView={setView}/>
         {render}
     </>
   )
-}
-
-function Mostrar(props)
-{
-    function renderiza(e)
-    {
-        props.setView(e.target.textContent);
-    }
-    return(
-    <div className="botonera">
-        <button onClick={renderiza}>Todos</button>
-        <button onClick={renderiza}>Deportes</button>
-        <button onClick={renderiza}>Musical</button>
-        <button onClick={renderiza}>Accion</button>
-    </div>
-    )
 }
