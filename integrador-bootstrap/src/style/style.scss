@@ -1,13 +1,42 @@
 @import './carrusel';
 @import './boton';
 @import './cartas';
-
+@import './footer';
+html{
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: auto;
+}
+.container-fluid{
+    padding: 0 !important;
+}
+.p-relative
+{
+    min-height: 100vh;
+   position: relative;
+   padding-bottom: 90px;
+}
 body{
     background-color: #282828;
 }
-
-.card-section{
+.categoria{
     display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+    width: 100%;
+    background-image: linear-gradient(to left,#fab818,#ef4323);
+    align-items: center;
+    color: wheat;
+    margin-top: 5px;
+    height: 3rem;
+}
+.nav-fixed{
+    position: fixed;
+    width: 100%;
+    z-index: 100000;
+    
+}
+.padding-top{
+    padding-top: 65px;
 }

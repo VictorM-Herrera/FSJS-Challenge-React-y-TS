@@ -4,7 +4,9 @@ import { Button, Col, Row } from 'react-bootstrap'
 
 export default function Brand() {
   return (
-    <>
+    <><div className='nav-fixed'>
+
+   
             <MDBContainer fluid className='justify-content-center bg-dark'>
                 <MDBRow className='align-items-center'>
                     <MDBCol size='2'>
@@ -19,7 +21,8 @@ export default function Brand() {
                         <button className='boton boton-rojo'><i className="fab fa-gratipay"></i></button>
                     </MDBCol>
                 </MDBRow>
-            </MDBContainer>
+            </MDBContainer> 
+            </div>
     </>
   )
 }

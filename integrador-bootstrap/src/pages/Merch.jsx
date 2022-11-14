@@ -1,26 +1,20 @@
 import { MDBCol, MDBContainer, MDBRow } from 'mdb-react-ui-kit'
 import React from 'react'
-import Carrusel from '../components/Carrusel'
 import ListaCartas from '../components/Cartas'
 
-export default function Anime() {
+export default function Merch() {
   return (
     <MDBContainer fluid>
-        <MDBRow>
-            <MDBCol size={12}>
-                <Carrusel/>
-            </MDBCol>
-        </MDBRow>
-        <MDBRow>
-            <MDBCol xl="12">
+        <MDBRow className='soso'>
+            <MDBCol size={12} xl="12">
                 <div className='categoria'>
-                    <h3>Animes destacados:</h3>
+                    <h3>Merch destacada:</h3>
                 </div>
             </MDBCol>
         </MDBRow>
         <MDBRow>
             <MDBCol size={12} className="d-flex justify-content-center">
-                <ListaCartas tipo="anime"/>
+                <ListaCartas tipo="merch"/>
             </MDBCol>
         </MDBRow>
     </MDBContainer>

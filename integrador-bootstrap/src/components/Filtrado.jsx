@@ -1,8 +1,10 @@
 import { Col, Container, Dropdown, Row } from "react-bootstrap";
+import DropdownItem from "react-bootstrap/esm/DropdownItem";
 
 
 export default function Filtrado() {
   return (
+    <div className="padding-top">
         <Container fluid>
             <Row>
                 <Col>
@@ -11,8 +13,9 @@ export default function Filtrado() {
                         <i class="fas fa-sort-amount-down-alt"></i>
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
-                            <Dropdown.Item href="#">Anime</Dropdown.Item>
-                            <Dropdown.Item href="#">Merch</Dropdown.Item>
+                            <Dropdown.Item href="/">Todos</Dropdown.Item>
+                            <Dropdown.Item href="/anime">Anime</Dropdown.Item>
+                            <Dropdown.Item href="/merch">Merch</Dropdown.Item>
                             <Dropdown.Divider/>
                             <Dropdown.Item href="#">FaQ</Dropdown.Item>
                         </Dropdown.Menu>
@@ -20,5 +23,6 @@ export default function Filtrado() {
                 </Col>
             </Row>
         </Container>
+        </div>
   )
 }

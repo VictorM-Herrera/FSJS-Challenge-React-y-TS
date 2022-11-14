@@ -1,51 +1,51 @@
 let arrayProductos=[
     {
         category:"anime",
-        img:"https://picsum.photos/200/300",
+        img:"./images/Kimetsu.jpg",
         price:"100",
         title:"asd"
     },
     {
         category:"anime",
-        img:"https://picsum.photos/200/300",
+        img:"./images/Kimetsu.jpg",
         price:"100",
         title:"asd"
     },
     {
         category:"anime",
-        img:"https://picsum.photos/200/300",
+        img:"./images/Kimetsu.jpg",
         price:"100",
         title:"asd"
     },
     {
         category:"anime",
-        img:"https://picsum.photos/200/300",
+        img:"./images/Kimetsu.jpg",
         price:"100",
         title:"asd"
     },
     {
         category:"merch",
-        img:"https://picsum.photos/200/300",
+        img:"./images/buzo.jpg",
         price:"12000",
-        title:""
+        title:"sdd"
     },
     {
         category:"merch",
-        img:"https://picsum.photos/200/300",
+        img:"./images/buzo.jpg",
         price:"1452",
-        title:""
+        title:"dsa"
     },
     {
         category:"merch",
-        img:"https://picsum.photos/200/300",
+        img:"./images/buzo.jpg",
         price:"1000",
-        title:""
+        title:"sdadsa"
     },
     {
         category:"merch",
-        img:"https://picsum.photos/200/300",
+        img:"./images/buzo.jpg",
         price:"500",
-        title:""
+        title:"saddsa"
     },
 ]
 export default arrayProductos;
