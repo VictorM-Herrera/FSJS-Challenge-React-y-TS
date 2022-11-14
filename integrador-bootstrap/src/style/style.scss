@@ -1,0 +1,13 @@
+@import './carrusel';
+@import './boton';
+@import './cartas';
+
+body{
+    background-color: #282828;
+}
+
+.card-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
