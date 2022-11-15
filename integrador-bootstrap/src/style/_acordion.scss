@@ -1,0 +1,30 @@
+
+.preguntas{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.accordion-header{    
+    
+    &:active{
+        outline: none;
+    }
+    &:focus{
+        outline: none;
+    }
+    &:target{
+        outline: none;
+    }
+}
+.accordion-button{
+    border: 10px solid rgb(255, 154, 3);
+    border-radius: 10px;
+    color: wheat;
+    background-color: opacify($color: rgb(255, 154, 3), $amount: 0.2);
+
+}
+.acordion-text{
+    width: 300px;
+    overflow-x: hidden;
+    text-align: justify;
+}

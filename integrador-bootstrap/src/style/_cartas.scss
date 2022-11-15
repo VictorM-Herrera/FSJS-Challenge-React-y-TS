@@ -15,13 +15,17 @@
         overflow-y: hidden;
         border-radius: 15px;
         box-shadow: 3px 3px 6px #343a40;
+        background-color: #2c1a05;;
         .micard-img{
             height: 55%;
             width: 100%;
             overflow: hidden;
+            background-color: rgb(161, 158, 150);
             img{
                 width: 100%;
                 height: 100%;
+                opacity: .7;
+                z-index: -1;
             }
         }
         .micard-body{
@@ -47,14 +51,16 @@
             .micard-button{
                 width: 100%;
                 height: 33.3%;
+                
                 .card-boton{
                     width: 100%;
                     height: 100%;
                     border: none;
                     transition: font-size .2s;
                     outline: none;
+                    background-image: linear-gradient(to left,#fab818,#ef4323);
                     &:hover{
-                        background-color: wheat;
+                        color: wheat;
                         font-size: 20px;
                     }
                 }
@@ -64,8 +70,9 @@
             position: absolute;
             border: none;
             background-color: transparent;
-            &:hover{
-
+            z-index: 2;
+            &:active{
+                outline: none;
             }
         }
     }

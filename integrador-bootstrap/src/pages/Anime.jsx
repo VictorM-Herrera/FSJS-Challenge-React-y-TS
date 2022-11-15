@@ -3,7 +3,7 @@ import React from 'react'
 import Carrusel from '../components/Carrusel'
 import ListaCartas from '../components/Cartas'
 
-export default function Anime() {
+export default function Anime(props) {
   return (
     <MDBContainer fluid>
         <MDBRow>
@@ -20,7 +20,7 @@ export default function Anime() {
         </MDBRow>
         <MDBRow>
             <MDBCol size={12} className="d-flex justify-content-center">
-                <ListaCartas tipo="anime"/>
+                <ListaCartas tipo="anime" fil={props.fil}/>
             </MDBCol>
         </MDBRow>
     </MDBContainer>

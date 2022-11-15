@@ -16,11 +16,21 @@ function GeneraCartas(props)
         <>
         {
             arrayProductos.map((element,key)=>{
-                if(element.category === props.tipo)
+                if(props.fil === "nada" && element.category === props.tipo)
                 {
                     return(
-                        <CreaUnaCarta imagen={element.img} title={element.title} precio={element.price} key={key}/>
-                    )                    
+                    <CreaUnaCarta imagen={element.img} title={element.title} precio={element.price} key={key}/>
+                    )
+                }else{
+                    if(element.category === props.tipo)
+                    {
+                        if(element.title == props.fil)
+                        {
+                            return(
+                                <CreaUnaCarta imagen={element.img} title={element.title} precio={element.price} key={key}/>
+                            )   
+                        }
+                    }
                 }
             })
         }
@@ -43,7 +53,7 @@ function CreaUnaCarta(props)
     }
     return(
     <div className='micard-box'>
-        <button className='fav-button' onClick={cambiarIcon}><i class={icon}></i></button>
+        <button tabindex="-1" className='fav-button' onClick={cambiarIcon}><i class={icon}></i></button>
         <div className='micard-img'>
             <img src={props.imagen} alt="img" />
         </div>

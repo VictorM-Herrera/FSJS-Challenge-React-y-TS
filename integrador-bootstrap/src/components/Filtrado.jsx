@@ -17,7 +17,7 @@ export default function Filtrado() {
                             <Dropdown.Item href="/anime">Anime</Dropdown.Item>
                             <Dropdown.Item href="/merch">Merch</Dropdown.Item>
                             <Dropdown.Divider/>
-                            <Dropdown.Item href="#">FaQ</Dropdown.Item>
+                            <Dropdown.Item href="/faq">FaQ</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
                 </Col>

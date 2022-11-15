@@ -10,6 +10,8 @@ import Home from './pages/Home';
 import Merch from './pages/Merch';
 import Anime from './pages/Anime';
 import Footer from './components/Footer';
+import Faqpage from './pages/Faqpage';
+import HomeNoFaq from './pages/HomeNoFaq';
 
 function App() {
   return (
@@ -20,8 +22,10 @@ function App() {
     <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/anime" element={<Anime/>} />
-          <Route path='/merch' element={<Merch/>}/>
+          <Route path="/anime" element={<Anime fil="nada"/>} />
+          <Route path='/merch' element={<Merch fil="nada"/>}/>
+          <Route path='/faq' element={<Faqpage/>}/>
+          <Route path='/home/:filtrado' element={<HomeNoFaq/>}/>
         </Routes>
       </BrowserRouter>
       <Footer/>

@@ -2,6 +2,7 @@
 @import './boton';
 @import './cartas';
 @import './footer';
+@import './acordion';
 html{
     overflow-x: hidden;
 }
@@ -21,6 +22,7 @@ html{
 }
 body{
     background-color: #282828;
+    color:wheat;
 }
 .categoria{
     display: flex;
@@ -39,4 +41,7 @@ body{
 }
 .padding-top{
     padding-top: 65px;
+}
+.categoria{
+    padding-left: 100px;
 }

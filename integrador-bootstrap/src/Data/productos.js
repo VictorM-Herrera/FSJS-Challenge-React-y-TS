@@ -1,49 +1,49 @@
 let arrayProductos=[
     {
         category:"anime",
-        img:"./images/Kimetsu.jpg",
+        img:"https://media.timeout.com/images/105528586/750/422/image.jpg",
         price:"100",
         title:"asd"
     },
     {
         category:"anime",
-        img:"./images/Kimetsu.jpg",
+        img:"https://media.timeout.com/images/105528586/750/422/image.jpg",
         price:"100",
         title:"asd"
     },
     {
         category:"anime",
-        img:"./images/Kimetsu.jpg",
+        img:"https://media.timeout.com/images/105528586/750/422/image.jpg",
         price:"100",
         title:"asd"
     },
     {
         category:"anime",
-        img:"./images/Kimetsu.jpg",
+        img:"https://media.timeout.com/images/105528586/750/422/image.jpg",
         price:"100",
         title:"asd"
     },
     {
         category:"merch",
-        img:"./images/buzo.jpg",
+        img:"https://http2.mlstatic.com/D_NQ_NP_905922-MLA47005678488_082021-O.webp",
         price:"12000",
         title:"sdd"
     },
     {
         category:"merch",
-        img:"./images/buzo.jpg",
+        img:"https://http2.mlstatic.com/D_NQ_NP_905922-MLA47005678488_082021-O.webp",
         price:"1452",
         title:"dsa"
     },
     {
         category:"merch",
-        img:"./images/buzo.jpg",
+        img:"https://http2.mlstatic.com/D_NQ_NP_905922-MLA47005678488_082021-O.webp",
         price:"1000",
         title:"sdadsa"
     },
     {
         category:"merch",
-        img:"./images/buzo.jpg",
+        img:"https://http2.mlstatic.com/D_NQ_NP_905922-MLA47005678488_082021-O.webp",
         price:"500",
         title:"saddsa"
     },
