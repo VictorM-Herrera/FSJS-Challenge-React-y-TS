@@ -34,7 +34,23 @@
 }
 
 .gap {
-  gap: 10px;
+  gap: 10px !important;
+}
+
+table {
+  width: 100%;
+}
+table tbody {
+  width: fit-content;
+}
+table tbody .table-img {
+  max-width: 50px;
+}
+table tbody .table-img .t-img-width {
+  width: 100%;
+}
+table tbody .table-text {
+  font-size: 250x;
 }
 
 .card-section {

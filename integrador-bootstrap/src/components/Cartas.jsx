@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useCart } from 'react-use-cart'
 import arrayProductos from '../Data/productos'
 
 export default function ListaCartas(props) {
@@ -19,7 +20,7 @@ function GeneraCartas(props)
                 if(props.fil === "nada" && element.category === props.tipo)
                 {
                     return(
-                    <CreaUnaCarta imagen={element.img} title={element.title} precio={element.price} key={key}/>
+                    <CreaUnaCarta imagen={element.img} title={element.title} precio={element.price} key={key} item={element} id={element.id}/>
                     )
                 }else{
                     if(element.category === props.tipo)
@@ -27,7 +28,7 @@ function GeneraCartas(props)
                         if(element.title == props.fil)
                         {
                             return(
-                                <CreaUnaCarta imagen={element.img} title={element.title} precio={element.price} key={key}/>
+                                <CreaUnaCarta imagen={element.img} title={element.title} precio={element.price} item={element} key={key} id={element.id}/>
                             )   
                         }
                     }
@@ -38,22 +39,13 @@ function GeneraCartas(props)
     )
 }
 
-function CreaUnaCarta(props)
+export function CreaUnaCarta(props)
 {
-    const [icon,setIcon]=useState("far fa-heart");
-    function cambiarIcon(e)
-    {
-        if(e.target.classList == "far fa-heart")
-        {
-            setIcon("fas fa-heart");
-        }else{
-            setIcon("far fa-heart");
-        }
-        
-    }
+    const{addItem} = useCart();
+
     return(
     <div className='micard-box'>
-        <button tabindex="-1" className='fav-button' onClick={cambiarIcon}><i class={icon}></i></button>
+        <a href={"/details/"+props.id}><button tabindex="-1" className='fav-button'><i class="fas fa-plus-circle"></i></button></a>
         <div className='micard-img'>
             <img src={props.imagen} alt="img" />
         </div>
@@ -65,7 +57,7 @@ function CreaUnaCarta(props)
                 <p>${props.precio}</p>
             </div>
             <div className='micard-button'>
-                <button className='card-boton'>comprar</button>
+                <button className='card-boton' onClick={()=> addItem(props.item)}>comprar</button>
             </div>
         </div>
     </div>

@@ -14,5 +14,22 @@
     background-color: rgb(233, 158, 19);
 }
 .gap{
-    gap: 10px;
+    gap: 10px!important;
+}
+table
+{
+    width: 100%;
+    tbody{
+        width: fit-content;
+        .table-img{
+            max-width: 50px;
+            .t-img-width{
+                width: 100%;
+            }
+        }
+        .table-text{
+            font-size: 250x;
+        }
+    }
+
 }

@@ -1,51 +1,59 @@
 let arrayProductos=[
     {
+        id:1,
         category:"anime",
         img:"https://media.timeout.com/images/105528586/750/422/image.jpg",
         price:"100",
-        title:"asd"
+        title:"Kimetsu"
     },
     {
+        id:2,
         category:"anime",
         img:"https://media.timeout.com/images/105528586/750/422/image.jpg",
         price:"100",
-        title:"asd"
+        title:"ustemiK"
     },
     {
+        id:3,
         category:"anime",
         img:"https://media.timeout.com/images/105528586/750/422/image.jpg",
         price:"100",
-        title:"asd"
+        title:"Yaiba"
     },
     {
+        id:4,
         category:"anime",
         img:"https://media.timeout.com/images/105528586/750/422/image.jpg",
         price:"100",
-        title:"asd"
+        title:"abiaY"
     },
     {
+        id:5,
         category:"merch",
         img:"https://http2.mlstatic.com/D_NQ_NP_905922-MLA47005678488_082021-O.webp",
         price:"12000",
-        title:"sdd"
+        title:"Jotaro-Mate"
     },
     {
+        id:6,
         category:"merch",
         img:"https://http2.mlstatic.com/D_NQ_NP_905922-MLA47005678488_082021-O.webp",
         price:"1452",
-        title:"dsa"
+        title:"JoJo"
     },
     {
+        id:7,
         category:"merch",
         img:"https://http2.mlstatic.com/D_NQ_NP_905922-MLA47005678488_082021-O.webp",
         price:"1000",
-        title:"sdadsa"
+        title:"Cabeza"
     },
     {
+        id:8,
         category:"merch",
         img:"https://http2.mlstatic.com/D_NQ_NP_905922-MLA47005678488_082021-O.webp",
         price:"500",
-        title:"saddsa"
+        title:"supaDog"
     },
 ]
 export default arrayProductos;
