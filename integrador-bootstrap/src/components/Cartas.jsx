@@ -17,7 +17,7 @@ function GeneraCartas(props)
         <>
         {
             arrayProductos.map((element,key)=>{
-                if(props.fil === "nada" && element.category === props.tipo)
+                if(props.fil === "All" && element.category === props.tipo)
                 {
                     return(
                     <CreaUnaCarta imagen={element.img} title={element.title} precio={element.price} key={key} item={element} id={element.id}/>

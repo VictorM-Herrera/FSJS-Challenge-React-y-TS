@@ -15,6 +15,7 @@ import HomeNoFaq from './pages/HomeNoFaq';
 import Carrito from './components/Carrito';
 import { CartProvider } from 'react-use-cart';
 import Detalles from './pages/Detalles';
+import Buy from './pages/Buy';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
               <Route path='/home/:filtrado' element={<HomeNoFaq/>}/>
               <Route path='/cart' element={<Carrito/>}/>
               <Route path='/details/:id' element={<Detalles/>}/>
+              <Route path='/buy' element={<Buy/>}/>
             </Routes>
           </BrowserRouter>
           <Footer/>

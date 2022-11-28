@@ -32,16 +32,23 @@ export default function Carrito() {
                                     <td>Cantidad: ({item.quantity})</td>
                                     <td>
                                         <div className='d-flex gap'>
-                                        <button className='boton' onClick={()=> updateItemQuantity(item.id, item.quantity - 1)}><i class="fas fa-minus"></i></button>
-                                        <button className='boton' onClick={()=> updateItemQuantity(item.id, item.quantity + 1)}><i class="fas fa-plus"></i></button>
-                                        <button className='boton boton-rojo' onClick={() => removeItem(item.id)}><i class="fas fa-trash"></i></button>                                          
+                                            <button className='boton' onClick={()=> updateItemQuantity(item.id, item.quantity - 1)}><i class="fas fa-minus"></i></button>
+                                            <button className='boton' onClick={()=> updateItemQuantity(item.id, item.quantity + 1)}><i class="fas fa-plus"></i></button>
+                                            <button className='boton boton-rojo' onClick={() => removeItem(item.id)}><i class="fas fa-trash"></i></button>                                          
                                         </div>
- </td>
+                                    </td>
                                 </tr>
                             )
                         })}
                     </tbody>
                 </table>
+                <div className='total-container'>
+                    <h2>Total ${cartTotal}</h2>
+                </div>
+                <div className='buton-cart gap'>
+                        <button className='boton boton-rojo'  onClick={() => emptyCart()}>Borrar Carrito</button>
+                        <a href="/buy"><button className='boton'>Comprar</button></a>
+                </div>
             </MDBCol>
         </MDBRow>
     </MDBContainer>

@@ -7,8 +7,8 @@ import Merch from './Merch'
 export default function Home() {
   return (
     <MDBContainer fluid>
-        <Anime fil="nada"/>
-        <Merch fil="nada"/>
+        <Anime fil="All"/>
+        <Merch fil="All"/>
         <FaQ/>
     </MDBContainer>
   )
